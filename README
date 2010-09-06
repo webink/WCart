@@ -1,0 +1,14 @@
+Cart module for Kohana 2.3.4
+
+CONFIGURATION (config/wcart.php)
+$config['model_name'] = 'Product_Model'; // the name of you product model
+$config['prod_id'] = 'id'; // the ID column of the product table
+$config['name'] = 'name'; // the column where is stored the name of the product
+$config['price'] = 'price'; // the column where is stored the name of the product
+
+
+USE:
+$this->cart = new Wcart(); // create a new instance
+$this->cart->load_session(); // load the session: NEEDED
+
+
